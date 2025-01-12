@@ -107,7 +107,7 @@
             btnAumentaCanal.TabIndex = 1;
             btnAumentaCanal.Text = "+";
             btnAumentaCanal.UseVisualStyleBackColor = true;
-            btnAumentaCanal.Click += btnAumentaVolume_Click;
+            btnAumentaCanal.Click += btnAumentaCanal_Click;
             // 
             // groupBoxVolume
             // 

@@ -4,12 +4,12 @@
     {
         static void Main(string[] args)
         {
-            //instanciar o objeto meo do tipo Box(Classe)
+            // Cria uma nova instância da classe Box
             Box meo = new Box();
-            //Box meo = null; //se a box nao tiver sido instanciada, entra no if e dá a mensagem correspondente
 
-            //TODO dar uma vista de olhos nos objetos na memoria
+            // TODO: Implementar uma forma de visualizar os objetos na memória
 
+            // Verifica se a box foi criada com sucesso
             if (meo == null)
             {
                 Console.WriteLine("A box ainda nao foi criada!");
@@ -34,6 +34,7 @@
                 switch (opcao)
                 {
                     case 1:
+                        // Tenta ligar a box se ela estiver desligada
                         if (meo.Estado == false)
                         {
                             meo.Ligar();
@@ -42,10 +43,10 @@
                         else
                         {
                             Console.WriteLine("Box já está ligada");
-                        }
-                        //meo.Mensagem = "ola"; //Metodo privado nao pode ser alterado
+                        }                        
                         break;
                     case 2:
+                        // Desliga a box
                         meo.Desligar();
                         Console.WriteLine(meo.Mensagem);
                         break;
